@@ -1,18 +1,17 @@
 <?php
 
 function maisProximo(array $valores, int $referencia): int {
-
-		$origem = $valores;
+    $origem = $valores;
 
     usort($valores, function($a, $b) use ($referencia){
         return abs($a - $referencia) - abs($b - $referencia);
     });
 
-		$resultado = array_shift($valores);
+    $resultado = array_shift($valores);
 
-		if (array_search(abs($resultado), $origem)) {
-			return abs($resultado);
-		};
+    if (array_search(abs($resultado), $origem)) {
+        return abs($resultado);
+    };
 
     return $resultado;
 }
