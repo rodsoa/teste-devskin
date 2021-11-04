@@ -24,7 +24,7 @@ function calculaDias($dataInicial, $dataFinal) {
 		- A regra acima não e valida para anos divisiveis por 100. Estes anos devem ser divisiveis por 400 para serem anos bissextos. Assim, o ano 1700, 1800, 1900 e 2100 nao sao bissextos, mas 2000 e bissexto.
 		- Não e permitido o uso de classes e funcoes de data da linguagem (DateTime, mktime, strtotime, etc).
 	*/
-	return diferencaEmdias($dataFinal, $dataInicial);
+	return diferencaEmDias($dataFinal, $dataInicial);
 }
 
 
